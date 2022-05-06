@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: #0B2434;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+.game-map{
+    background-color: #f5f5f5;
+    padding: 35px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    place-content: center;
+    place-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    width: 360px;
+    height: 520px;
+}
+.game-title{
+    color:#2B283A;
+}
+.game-short-instruction{
+    text-align: center;
+    color: #4A4E74;
+}
+.tiles{
+    display: grid;
+    grid-template-columns: repeat(5, 35px);
+    gap: 15px;
+}
+.tile{
+    display: flex;
+    gap: 3px;
+    padding: 6px;
+    place-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    height: 35px;
+    aspect-ratio: 1;
+    background-color: #FFFFFF;
+    color: #2B283A;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 4px 0 #00000025;
+}
+.game-roll-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5035FF;
+    border-radius: 5px;
+    height: 35px;
+    color: #FFFFFF;
+    font-weight: bold;
+    width: 92px;
+    border: none;
+    cursor: pointer;
+}
+.game-roll-button:active{
+    box-shadow: inset 0 0 15px 5px #000000;
+}
+.dots{
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+.game-in-game-info{
+    display: flex;
+    gap: 0 50px;
+}
+.game-best-time{
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(127, 112, 29);
+    z-index: 10;
+}
+.game-start-alert{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: grid;
+    place-content: center;
+}
+.game-start_timer{
+    border: none;
+    background-color: transparent;
+    height: 500px;
+    width: 500px;
+    color: white;
+    font-size: 5em;
+}
