@@ -72,12 +72,14 @@ function App() {
       localStorage.setItem("BestMin", min)
       localStorage.setItem("BestSec", sec)
       localStorage.setItem("BestMSec", msec)
+      setRecord([min,sec,msec])
     }
     else if(timeToSec<storageTime && timeToSec!==0){
       localStorage.setItem("BestTime",timeParts[0])
       localStorage.setItem("BestMin", min)
       localStorage.setItem("BestSec", sec)
       localStorage.setItem("BestMSec", msec)
+      setRecord([min,sec,msec])
     }
   },[tenzies])
 
