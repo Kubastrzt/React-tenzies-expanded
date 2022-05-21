@@ -8,4 +8,4 @@ After selecting some of dices you can use roll button to get new values on unsel
 
 If you manage to get 10 dices with equal values game ends and your score is saving to local storage. If it is better then previous one it is saved as best time
 
-### [CHECK IT OUT] (https://tenzies-expanded.netlify.app/) 
+### https://tenzies-expanded.netlify.app/
