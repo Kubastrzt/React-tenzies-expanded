@@ -143,7 +143,7 @@ function App() {
         <time>{(time[0].min<10 ? "0"+time[0].min : time[0].min) +":"+(time[0].sec<10 ? "0"+time[0].sec : time[0].sec)+":"+ (time[0].msec<10 ? "0"+time[0].msec : time[0].msec)}</time>
         <span className='game-rolls'>Losy: {rollCount}</span>
       </div>
-      <div className='game-best-time'>{localStorage.getItem("BestTime") === null ? "Brak wyników" : "POPRZEDNI REKORD TO "+JSON.parse(localStorage.getItem("BestMin"))+":"+JSON.parse(localStorage.getItem("BestSec"))+":"+JSON.parse(localStorage.getItem("BestMSec"))}</div>
+      <div className='game-best-time'>{localStorage.getItem("BestTime") === '0,0,0' ? "Brak wyników" : "REKORD TO "+JSON.parse(localStorage.getItem("BestMin"))+":"+JSON.parse(localStorage.getItem("BestSec"))+":"+JSON.parse(localStorage.getItem("BestMSec"))}</div>
     </main>
   );
 }
